@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Bedtime</string>
     <string name="action_settings">Settings</string>
+    <string name="welcome_team_legend">Welcome Team Legend</string>
+    <string name="teusday_april_16_2019">Teusday April 16 2019</string>
+    <string name="add_new_story">Add New Story</string>
+    <string name="title">Title</string>
+    <string name="cover_image">Cover Image</string>
+
+    <string name="date">Teusday April 16 2019</string>
+
+    <string name="content">Content</string>
+    <string name="discard">Discard</string>
+    <string name="save">Save</string>
+    <string name="bold">B</string>
+    <string name="iterlics">I</string>
 </resources>
