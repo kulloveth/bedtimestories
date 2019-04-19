@@ -65,6 +65,24 @@
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="507dp" />
 
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="Add New Story-1"
+            android:onClick="openNewStoryOne"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="507dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Story-2"
+            android:onClick="openNewStoryTwo"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="507dp" />
+
 
     </LinearLayout>
 

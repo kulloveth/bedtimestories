@@ -2,23 +2,24 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rectangle_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".add_new_story">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profile_imageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="profile_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round"
-        android:contentDescription="profile_image" />
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcome_View"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
@@ -28,11 +29,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/profile_imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/date_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -40,11 +41,11 @@
         android:text="@string/teusday_april_16_2019"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/profile_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_View" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text_addStory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -56,10 +57,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/date_View" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/title_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -69,10 +70,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_addStory" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/cover_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -95,10 +96,10 @@
         android:background="@drawable/restangle_c"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/title_View" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/rectangle_view2"
         android:layout_width="311dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -108,47 +109,60 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/cover_imageView" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_uploadImage"
         android:layout_width="wrap_content"
         android:layout_height="39dp"
         android:text="Upload Image"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_view2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_view2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_view2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/upload_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="15dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:text="No Image Uploaded"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_view2"
         app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/btn_uploadImage"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_contents"
         android:layout_width="306dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#39A1F7"
+        android:onClick="openNewStoryTwo"
         android:text="Type Contents"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_view2"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <EditText
+        android:id="@+id/title_editText"
+        android:layout_width="303dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
 </android.support.constraint.ConstraintLayout>
